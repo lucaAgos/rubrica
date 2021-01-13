@@ -10,20 +10,17 @@ package rubrica;
  * @author agostinelli.luca
  */
 public class contatto {
- private String nome;
- private String cognome;
- private long numero;
-private String nomeFile;
-   
 
-   public contatto(String nome, String cognome, long numero,String nomeFile) {
+    private String nome;
+    private String cognome;
+    private long numero;
+
+    public contatto(String nome, String cognome, long numero) {
         this.nome = nome;
         this.cognome = cognome;
         this.numero = numero;
-        this.nomeFile=nomeFile;
+       
     }
-
- 
 
     public String getNome() {
         return nome;
@@ -48,11 +45,10 @@ private String nomeFile;
     public void setNumero(long numero) {
         this.numero = numero;
     }
+
   
-    public String getNomeFile(){
-        return nomeFile;
+    public String getutto() {
+     return "nome: "+nome+" cognome: "+cognome+" numero: "+numero;
     }
-
-
 
 }
